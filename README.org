@@ -1,0 +1,22 @@
+* QT6 Calculator
+** Requirements
+- CMake
+- MXE
+- Qt6 Base
+- Qt6 Widgets
+
+** Build
+#+begin_src bash
+  mkdir build
+  cd build
+  cmake ..
+  make
+#+end_src
+
+** Cross compile for Windows
+#+begin_src bash
+  mkdir build-win
+  cd build-win
+  export PATH="/opt/mxe/usr/bin:$PATH"
+  x86_64-w64-mingw32.static-cmake  ..
+#+end_src

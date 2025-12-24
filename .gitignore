@@ -1,0 +1,7 @@
+.cache/
+build/
+*~
+release/
+*moc*
+.clangd
+build-win
